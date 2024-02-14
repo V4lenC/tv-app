@@ -1,0 +1,201 @@
+body {
+  display: flex;
+  margin: 0;
+  background: url("https://wallpapers.com/images/hd/black-and-blue-spikes-s5j7a3epfo9tao92.jpg");
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  width: 70px;
+  height: 4rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu a .active {
+  position: relative;
+}
+.menu a .active::before {
+  position: absolute;
+  bottom: 15px;
+  content: "";
+  width: 20px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: orangered;
+}
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+main {
+  width: 100%;
+}
+
+.info-prog {
+  padding: 20px 0px;
+  display: flex;
+  gap: 30px;
+  height: 200px;
+  box-sizing: border-box;
+}
+.info-prog img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.info-prog .info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+  width: 50%;
+}
+.info-prog .info .titulo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.info-prog .info .subtitulo {
+  font-weight: 600;
+}
+
+.calendario {
+  width: 100%;
+  height: 70%;
+  box-sizing: border-box;
+  color: white;
+}
+.calendario .linea-tiempo {
+  font-family: "Courier New", Courier, monospace;
+  height: 2rem;
+  display: flex;
+  position: relative;
+}
+.calendario .linea-tiempo .marca-tiempo {
+  position: absolute;
+  bottom: 0;
+  color: orangered;
+}
+.calendario .linea-tiempo .hora {
+  min-width: 150px;
+}
+.calendario .canal {
+  display: flex;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 5px;
+  height: 60px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.calendario .canal:hover .logo {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.calendario .canal:hover .programa {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+}
+.calendario .logos {
+  padding-top: 37px;
+  margin-right: 5px;
+}
+.calendario .logo {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+.calendario .logo img {
+  width: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.calendario .cartelera {
+  display: flex;
+}
+.calendario .programacion {
+  display: flex;
+  gap: 5px;
+  height: 60px;
+  width: 5500px;
+  overflow: hidden;
+}
+.calendario .programas {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.calendario .programas .programa {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  overflow: hidden;
+}
+.calendario .programas .programa.current {
+  background-color: orangered;
+}
+.calendario .titulo {
+  font-weight: 600;
+}
+.calendario .horario {
+  font-size: 0.8rem;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(200, 200, 200);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}/*# sourceMappingURL=style.css.map */
